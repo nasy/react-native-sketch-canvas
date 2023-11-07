@@ -1,4 +1,4 @@
-package com.terrylinla.rnsketchcanvas;
+package com.nasy.rnsketchcanvas;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
