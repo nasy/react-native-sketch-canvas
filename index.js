@@ -1,19 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ReactNative, {
-  View,
-  Text,
-  TouchableOpacity,
+import PropTypes from 'prop-types';
+import React from 'react';
+import {
   FlatList,
-  ViewPropTypes,
-} from 'react-native'
-import SketchCanvas from './src/SketchCanvas'
+  TouchableOpacity,
+  View
+} from 'react-native';
+import SketchCanvas from './src/SketchCanvas';
 import { requestPermissions } from './src/handlePermissions';
 
 export default class RNSketchCanvas extends React.Component {
   static propTypes = {
-    containerStyle: ViewPropTypes.style,
-    canvasStyle: ViewPropTypes.style,
+    containerStyle: PropTypes.object,
+    canvasStyle: PropTypes.object,
     onStrokeStart: PropTypes.func,
     onStrokeChanged: PropTypes.func,
     onStrokeEnd: PropTypes.func,
@@ -282,4 +280,4 @@ RNSketchCanvas.CACHES = SketchCanvas.CACHES;
 
 export {
   SketchCanvas
-}
+};
